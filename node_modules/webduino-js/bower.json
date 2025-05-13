@@ -1,0 +1,19 @@
+{
+  "name": "webduino-js",
+  "description": "The Webduino Javascript Core, for Browser and Node.js",
+  "repository": "https://github.com/webduinoio/webduino-js.git",
+  "homepage": "https://webduino.io",
+  "keywords": [
+    "arduino",
+    "webduino"
+  ],
+  "license": "MIT",
+  "main": "dist/webduino-all.min.js",
+  "dependencies": {
+    "chrome-api-proxy": "chrome-api-proxy#0.x",
+    "paho": "webduinoio/org.eclipse.paho.mqtt.javascript#develop",
+    "setimmediate": "YuzuJS/setImmediate#1.x",
+    "webduino-bluetooth-transport": "webduino-bluetooth-transport#0.x",
+    "webduino-serial-transport": "webduino-serial-transport#0.x"
+  }
+}
