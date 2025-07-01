@@ -9,7 +9,7 @@ async function main() {
   const contract = await TempHumidity.deploy();
   await contract.waitForDeployment();
 
-  const contractAddress = contract.target.toString(); // 使用 target 獲取合約地址
+  const contractAddress = contract.target.toString(); 
   console.log("智能合約部署成功，地址：", contractAddress);
 
   if (network.config.chainId === 17000 && process.env.ETHERSCAN_API_KEY) {
