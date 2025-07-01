@@ -10,7 +10,6 @@ contract TempHumidity {
 
     Record[] private records;
 
-    // 定義事件以記錄數據存儲
     event DataStored(
         address indexed sender,
         uint256 temperature,
@@ -21,7 +20,6 @@ contract TempHumidity {
 
     function storeData(uint256 _temperature, uint256 _humidity) public {
         records.push(Record(_temperature, _humidity, block.timestamp));
-        // 發出事件，注意交易哈希通常由客戶端提供，因為合約無法直接訪問 tx.hash
         emit DataStored(msg.sender, _temperature, _humidity, block.timestamp, bytes32(0));
     }
 
