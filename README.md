@@ -28,11 +28,3 @@ It allows users to store and retrieve **temperature and humidity** data on the E
 
 ---
 
-## 🧱 Contract Overview
-
-```solidity
-struct Record {
-    uint256 temperature;
-    uint256 humidity;
-    uint256 timestamp;
-}
